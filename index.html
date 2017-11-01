@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--<link rel="shortcut icon" type="image/x-icon" href="../imagenes/Favicon.ico" />-->
+	<link rel="icon" type="image/png" href="/imagenes/Logo2.png" />
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/nuevo.css">
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<link rel="stylesheet" type="text/css" href="css/Bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/javas.js"></script>
+</head>
+<body>
+	<!--SECCION DE MENU Y SLIDER PRINCIPAL-->
+	<div class="row">
+		<nav class="navbar navbar-inverse" id="menuPrincipal">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="imagenes/Logo.png"></a>				    
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#Quienes_Somos">QUIÉNES SOMOS</a></li>
+						<li><a href="#">SERVICIOS</a></li>
+						<li><a href="#PaquetesDestacados">PAQUETES</a></li>
+						<li><a href="#Contactenos">CONTACTO</a></li>
+						<li>
+						<div class="hover12 hidden-sm hidden-xs"><a target="_blank" href="https://www.facebook.com/">
+						<figure><img style="padding-top: 10px;" src="imagenes/facebook.png"></figure></a></div></li>
+						<li>
+						<div class="hover12 visible-sm visible-xs"><a target="_blank" href="https://www.facebook.com/">
+						<figure><img style="padding-top: 10px; padding-left: 14px" src="imagenes/facebook.png"></figure></a></div>
+						</li>
+					
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="w3-content w3-display-container">
+			<img class="mySlides" src="imagenes/Slider.jpg" style="width:100%">
+			<img class="mySlides" src="imagenes/Slider2.jpg" style="width:100%">
+			<img class="mySlides" src="imagenes/Slider.jpg" style="width:100%">
+			<img class="mySlides" src="imagenes/Slider.jpg" style="width:100%">
+			<button class="w3-button w3-black w3-display-left visible-lg visible-md" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right visible-lg visible-md" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="visible-sm visible-xs" style="padding-top: 50px"></div>
+		<!--SECCION DE PAQUETES-->
+		<div id="PaquetesDestacados">
+		<h1 id="Titulos">PAQUETES DESTACADOS</h1>
+		<div class="row hover12">
+			<div class="col-md-4 imagenIzq">
+				<figure><img class="img-responsive ImgPaquetes" src="imagenes/1.jpg"></figure>
+				<div class="col-md-11"><h1 style="text-align: center; font-family: OleoScript;">Caribe legendario</h1>
+					<a href="#" class="Informacion">Más Información<a href="#" class="Mas">+</a></a>
+				</div>
+			</div>
+			<div class="col-md-4 imagenDer">
+				<figure><img class="img-responsive ImgPaquetes" src="imagenes/2.jpg"></figure>
+				<div class="col-md-11"><h1 style="text-align: center; font-family: OleoScript;">la Sele en México</h1></div>
+			</div>
+			<div class="col-md-4 imagenDer">
+				<figure><img class="img-responsive ImgPaquetes" src="imagenes/3.jpg"></figure>
+				<div class="col-md-11"><h1 style="text-align: center; font-family: OleoScript;">Vacaciones en Cuba</h1></div>
+			</div>
+		</div>
+		<div class="row hover12">
+			<div class="col-md-4 imagenIzq">
+				<figure><img class="img-responsive ImgPaquetes" src="imagenes/1.jpg"></figure>
+				<div class="col-md-11"><h1 style="text-align: center; font-family: OleoScript;">Caribe legendario</h1>
+					<a href="#" class="Informacion">Más Información<a href="#" class="Mas">+</a></a>
+				</div>
+			</div>
+			<div class="col-md-4 imagenDer">
+				<figure><img class="img-responsive ImgPaquetes" src="imagenes/2.jpg"></figure>
+				<div class="col-md-11"><h1 style="text-align: center; font-family: OleoScript;">la Sele en México</h1></div>
+			</div>
+			<div class="col-md-4 imagenDer">
+				<figure><img class="img-responsive ImgPaquetes" src="imagenes/3.jpg"></figure>
+				<div class="col-md-11"><h1 style="text-align: center; font-family: OleoScript;">Vacaciones en Cuba</h1></div>
+			</div>
+		</div>
+		</div>
+		<!--Quedé en el script https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form-->
+		<!--SECCION DE FORMULARIO DE CONTACTOS-->
+		<div id="Contactenos" style="padding: 5% 0px" class="row">
+			<h1 id="Titulos" style="padding-bottom: 10px">CONTACTENOS</h1>
+			<p id="Parrafo" class="hidden-sm hidden-xs">Si desea información acerca de nuestros servicios complete <br> el siguiente formulario para contactarle a la brevedad posible.</p>
+			<p id="Parrafo" class="visible-xs visible-sm" style="font-size: 20px">Si desea información acerca de nuestros servicios complete el siguiente formulario para contactarle a la brevedad posible.</p>
+
+			<form id="contact-form" action="contact.php" method="POST" role="form">
+				<div class="col-md-6 col-center">
+				  	<div class="messages"></div>
+					<div class="form-group">
+						<input id="form_nombre" class="form-control EstiloInput" type="text" name="nombre" placeholder="Nombre" required="required" data-error="Debe ingresar su nombre.">
+						<div class="help-block with-errors"></div>
+					</div>
+					<div class="form-group">
+						<input id="form_correo" class="form-control EstiloInput" type="email" name="correo" placeholder="Correo" required="required" data-error="Debe ingresar un correo válido.">
+						<div class="help-block with-errors"></div>
+					</div>
+					<div class="form-group">
+						<input id="form_telefono" class="form-control EstiloInput" type="tel" name="telefono" placeholder="Teléfono">		
+					</div>
+					</br>
+					<div class="form-group">
+						<textarea style="border:1px solid" name="mensaje" class="form-control" placeholder="Mensaje" required="required" data-error="Por favor, déjenos un mensaje."></textarea>
+						<div class="help-block with-errors"></div>
+					</div>
+					<div>
+						<center><input class="btn btn-primary btn-send" type="submit" name="enviar" value="ENVIAR"></center>
+					</div>
+				</div>
+			</form>
+		</div> <!--cierra row-->
+	</div>
+
+
+	<!--SECCION QUIENES SOMOS-->
+	
+	<div id="Quienes_Somos" class="SecSomos" style="padding: 50px 10px;">
+	<div class="row" style="padding: 50px 50px">
+	<div class="col-md-6" style="padding-top: 8%">
+<div class="hover13">
+  <div>
+    <figure><center><img class="img-responsive" src="imagenes/Logo2.png"/></center></figure>
+  </div>
+</div>
+	</div>
+	<div class="col-md-6">
+	<h1 class="TituloSomos visible-sm visible-xs" style="font-size: 20px">QUIÉNES SOMOS</h1><!--Dispositivos pequeños-->
+	<h1 class="TituloSomos visible-lg visible-md">QUIÉNES SOMOS</h1><!--Dispositivos grandes-->
+		<p class="InfoSomos">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "</p>
+
+		<p class="InfoSomos">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	</div>
+	</div>
+	</div>
+	<!--FOOTER-->
+	<div class="row">
+		<div class="footer">
+			<div class="visible-lg visible-md">
+			<!--SEGUNDO MENU-->
+			<div class="col-md-8 col-center">
+				<ul class="menu">
+						<li><a href="#Quienes_Somos">QUIÉNES SOMOS</a></li>
+						<li><a href="#">SERVICIOS</a></li>
+						<li><a href="#PaquetesDestacados">PAQUETES</a></li>
+						<li><a href="#Contactenos">CONTACTO</a></li>
+					</ul>	
+			</div>
+			</div>
+			<div class="facebookFooter hover12">
+				<a target="_blank" href="https://www.facebook.com/">
+				<figure><img src="imagenes/facebook.png"></a></figure>
+			</div>
+				<!--Contenido en el archivo javascript.js-->
+				<center id="anio" style="font-family: MontserratExtraLight, arial">Contenido del copyright</center> 
+		</div>
+	</div>
+	<script src="js/javascript.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

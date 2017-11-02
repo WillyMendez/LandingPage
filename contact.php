@@ -5,9 +5,9 @@
 
 //Aquí puede ir la dirección de correo careers@dintdigital.com
 // la dirección de correo electrónico que estará en el campo del correo electrónico
-$from = 'Formulario de contacto Landing Page <will.mendez06@gmail.com>';
+$from = 'Formulario de contacto Landing Page <admin@dominio.com>';
 // la dirección de correo electrónico que recibirá el correo electrónico con el resultado del formulario
-$sendTo = 'Formulario de contacto Landing Page <will.mendez06@gmail.com>';
+$sendTo = 'Formulario de contacto Landing Page <admin@dominio.com>';
 
 // el asunto del correo electrónico
 $subject = 'Nuevo mensaje del formulario de contacto';

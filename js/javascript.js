@@ -21,3 +21,12 @@ function showDivs(n) {
 	var an = f.getFullYear();
 	var copyright = ". Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed";
 	document.getElementById("anio").innerHTML = an + copyright;
+
+
+  function AlertarOk(){
+    swal(
+      '¡Gracias!',
+      'Formulario enviado con éxito!',
+      'success'
+)
+  }

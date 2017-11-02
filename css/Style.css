@@ -23,6 +23,22 @@ font-family: 'Montserrat Light', arial;
 	font-family: MontserratExtraLight;
 	src: url(../fonts/Montserrat-ExtraLight.ttf) format('truetype');
 }
+@font-face{
+	font-family: BeyondTheMountains;
+	src: url(../fonts/beyond_the_mountains.ttf) format('truetype');
+}
+textarea::placeholder{
+	font-family: MontserratRegular !important;
+	color: #000 !important;
+}
+input::placeholder{
+	color: #000 !important;
+	font-family: MontserratRegular !important;
+
+	}
+.efectoLogo:hover:before{
+	background: red;
+}
 
 #menuPrincipal{
 	background-color: rgba(0, 0, 0, 0.52) !important;
@@ -56,6 +72,40 @@ sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}s
 .w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 
+
+.ContenidoSlider>div{
+	position: absolute;
+	bottom:0px;
+	width: 100%;
+	color:#fff;
+	font-size: 90px !important;
+	padding-bottom: 20%;
+	font-weight:bold;
+}/*
+@media (max-width: 600px) {
+	.TextoSlide{
+		font-size: 30px !important;
+		padding-bottom: 100% !important;
+	}
+}*/
+
+@media screen and (max-width: 1024px) {
+	.TextoSlide{
+		display: none;
+	}
+}
+@media screen and (max-width: 400px) {
+	.TextoSlide{
+		display: none;
+	}
+}
+
+.TextoSlide{
+	text-align: center; 
+	font-family: BeyondTheMountains, OleoScript, arial; 
+	font-size: 90px;
+	color: #fff;
+}
 
 .ImgPaquetes{
 	padding-top: 25px;
@@ -175,23 +225,37 @@ sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}s
 		opacity: 1;
 	}
 }
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    red;
+/* Shine */
+.hover14 figure {
+	position: relative;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    red;
-   opacity:  1;
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    red;
-   opacity:  1;
+.hover14 figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    red;
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
 }
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    red;
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
 }
 .EstiloInput{
     border-top:0px solid !important;
